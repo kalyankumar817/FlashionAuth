@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    <title>Menswear Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Fashion Flair</a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Home" asp-controller="Main">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Menswear" asp-controller="Main">Menswear</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link">Womenswear</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Kidswear" asp-controller="Main">Kidswear</a>
+                </li>
+                <form class="form-inline my-2 my-lg-0" method="get" asp-action="Search" asp-controller="Main">
+                    <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a asp-action="Login" asp-controller="Main">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-center">
+            <h1>Womenswear</h1>
+            <h2 style="color:blue">Welcome to the Womenswear section of Fashion Flair</h2>
+        </div>
+        <!-- Add more content about Menswear here -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/images/11..jpeg" class="img-fluid" alt="Image 1" />
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/12..jpg" class="img-fluid" alt="Image 2" />
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/13.jpeg" class="img-fluid" alt="Image 1" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/images/pexels-godisable-jacob-226636-794062.jpg" class="img-fluid" alt="Image 1" />
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/pexels-olenagoldman-1021693.jpg" class="img-fluid" alt="Image 2" />
+                </div>
+                <div class="col-md-4">
+                    <img src="/images/pexels-olly-974911.jpg" class="img-fluid" alt="Image 1" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

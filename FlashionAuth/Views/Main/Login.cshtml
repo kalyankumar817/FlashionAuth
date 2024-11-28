@@ -1,0 +1,18 @@
+﻿@model FlashionAuth.Models.Loginform
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input  class="form-control" type="text" asp-for="username"/>
+        <span asp-validation-for="username" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input class="form-control" type="text" asp-for="password" />
+        <span asp-validation-for="password" class="text-danger"></span>
+    </div>
+    <div class="mb-3 text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-info" asp-action="Signup" asp-controller="Main">Signup</button>
+    </div>
+</form>

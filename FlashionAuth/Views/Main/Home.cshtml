@@ -1,0 +1,111 @@
+﻿<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Fashion Flair</a>
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Menswear" asp-controller="Main">Menswear</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Womenswear" asp-controller="Main">Womenswear</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Kidswear" asp-controller="Main">Kidswear</a>
+                </li>
+                <form class="form-inline my-2 my-lg-0" method="get" asp-action="Search" asp-controller="Main">
+                    <input class="form-control mr-sm-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Cart</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a asp-action="Login" asp-controller="Main">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/1..jpeg" class="img-fluid" alt="Image 1" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/2..jpg" class="img-fluid" alt="Image 2" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/3..jpg" class="img-fluid" alt="Image 1" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/5.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/6.jpeg" class="img-fluid" alt="Image 2" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/7..jpg" class="img-fluid" alt="Image 1" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/11..jpeg" class="img-fluid" alt="Image 1" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/12..jpg" class="img-fluid" alt="Image 2" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/13.jpeg" class="img-fluid" alt="Image 1" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/pexels-godisable-jacob-226636-794062.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/pexels-olenagoldman-1021693.jpg" class="img-fluid" alt="Image 2" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/pexels-olly-974911.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/pexels-daianne-gomes-442706-1133721.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/pexels-vika-glitter-392079-1619697.jpg" class="img-fluid" alt="Image 2" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/pexels-vika-glitter-392079-1619801.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/images/pexels-vika-glitter-392079-1620760.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/pexels-vika-glitter-392079-1620788.jpg" class="img-fluid" alt="Image 2" />
+            </div>
+            <div class="col-md-4">
+                <img src="/images/pexels-vika-glitter-392079-1620826.jpg" class="img-fluid" alt="Image 1" />
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
